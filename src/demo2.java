@@ -1,7 +1,9 @@
 import javafx.application.Application;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
@@ -10,7 +12,7 @@ import javafx.stage.WindowEvent;
  * @Created by 邦邦拒绝魔抗
  * @Description TODO
  */
-public class demo2 extends Application {
+/*public class demo2 extends Application {
 
     private BorderPane borderPane;
     private BBTankPane bbTankPane;
@@ -41,5 +43,28 @@ public class demo2 extends Application {
                 bbTankPane.setNeedRun(false);//关闭窗口后，各元素的更新重绘也终止
             }
         });
+    }
+}*/
+public class demo2 extends Application {
+
+    public static void main(String[] args) {
+        launch(args);//调用start
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+        VBox root = fxmlLoader.load();
+
+        Scene scene = new Scene(root);
+
+        stage.setTitle("User Registration");
+        stage.setScene(scene);
+
+        // Maximize or set specific size
+        stage.setWidth(800);
+        stage.setHeight(600);
+
+        stage.show();
     }
 }

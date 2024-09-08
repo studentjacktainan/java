@@ -32,7 +32,7 @@ public class BBTankPane extends Pane implements Runnable {
         return instance;
     }
 
-    private BBTankPane() {
+    protected BBTankPane() {
         //背景
         setBackground(new Background(new BackgroundFill(
                 Color.BLACK, null, null)));//颜色、圆角、插图
