@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="javafx-sdk-22.0">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/javafx-sdk-22.0.2/javafx.base" />
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/javafx-sdk-22.0.2/javafx.controls" />
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/javafx-sdk-22.0.2/javafx.fxml" />
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/javafx-sdk-22.0.2/javafx.graphics" />
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/javafx-sdk-22.0.2/javafx.media" />
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/javafx-sdk-22.0.2/javafx.swing" />
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/javafx-sdk-22.0.2/javafx.web" />
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/javafx-sdk-22.0.2" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../../Program Files/Java/javafx-sdk-22.0.2" recursive="false" type="SOURCES" />
+  </library>
+</component>
