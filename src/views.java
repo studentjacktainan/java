@@ -38,7 +38,7 @@ public class views {
         params.add(mail);
         if(DbUtil.getexecuteQuery(sql_search,params).next()){
             try {
-                Parent newSceneRoot = FXMLLoader.load(getClass().getResource("start-view.fxml"));
+                Parent newSceneRoot = FXMLLoader.load(getClass().getResource("/fxmls/start-view.fxml"));
                 Scene newScene = new Scene(newSceneRoot);
                 Stage currentStage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
                 currentStage.setScene(newScene);
@@ -76,7 +76,7 @@ public class views {
     }
 
     public void startGameClicked(ActionEvent actionEvent) throws IOException {
-        Parent newSceneRoot = FXMLLoader.load(getClass().getResource("choose-game-view.fxml"));
+        Parent newSceneRoot = FXMLLoader.load(getClass().getResource("/fxmls/choose-game-view.fxml"));
         Scene newScene = new Scene(newSceneRoot);
         Stage currentStage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(newScene);
@@ -86,7 +86,7 @@ public class views {
     }
 
     public void returnToMainClicked(ActionEvent actionEvent) throws IOException {
-        Parent newSceneRoot = FXMLLoader.load(getClass().getResource("start-view.fxml"));
+        Parent newSceneRoot = FXMLLoader.load(getClass().getResource("/fxmls/start-view.fxml"));
         Scene newScene = new Scene(newSceneRoot);
         Stage currentStage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
         currentStage.setScene(newScene);
