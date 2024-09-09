@@ -3,28 +3,34 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChooseGameView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChooseGameView" stylesheets="choose-game-view.css">
    <children>
-      <!-- Centering content using a VBox -->
-      <VBox alignment="CENTER" spacing="30.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-         <!-- Centered Title Label -->
+      <VBox alignment="CENTER" spacing="20" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <!-- Game Title -->
          <Label text="開始遊戲">
             <font>
                <Font size="64.0" />
             </font>
-            <alignment>CENTER</alignment>
          </Label>
 
-         <!-- Start Game Button -->
+         <!-- Single Game Button -->
          <Button fx:id="singleGame" mnemonicParsing="false" onAction="#singleGameClicked" text="單人遊戲">
             <font>
                <Font size="18.0" />
             </font>
          </Button>
 
-         <!-- View Rank Button -->
-         <Button fx:id="multipleGames" mnemonicParsing="false" onAction="#multipleGamesClicked" text="多人聯機">
+         <!-- Create Room Button -->
+         <Button fx:id="createRoom" mnemonicParsing="false" onAction="#createRoomClicked" text="創建房間">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+
+         <!-- Join Room Button -->
+         <Button fx:id="joinRoom" mnemonicParsing="false" onAction="#joinRoomClicked" text="加入房間">
             <font>
                <Font size="18.0" />
             </font>

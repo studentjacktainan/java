@@ -1,0 +1,35 @@
+.root {
+    -fx-background-image: url("gamechoose.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.game-title {
+    -fx-font-family: "Orbitron Bold", sans-serif;
+    -fx-font-size: 64px;
+    -fx-text-fill: #FFD700; /* Changed to gold color */
+    -fx-effect: dropshadow(gaussian, #FF8C00, 10, 0.7, 0, 0); /* Orange drop shadow for depth */
+}
+
+/* Rest of the styles remain the same */
+.game-button {
+    -fx-background-color: #000033;
+    -fx-text-fill: #00ffff;
+    -fx-border-color: #00ffff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-family: "Orbitron Regular", sans-serif;
+    -fx-font-size: 18px;
+    -fx-effect: dropshadow(gaussian, #00ffff, 10, 0.5, 0, 0);
+}
+
+.game-button:hover {
+    -fx-background-color: #000066;
+}
+
+.game-button:pressed {
+    -fx-background-color: #000099;
+}
+

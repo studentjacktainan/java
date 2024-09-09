@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Twoplayers" stylesheets="twoplayers_style.css">
+    <children>
+        <!-- Game Title -->
+        <Label text="多人遊戲" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+            <font>
+                <Font size="48.0" />
+            </font>
+            <alignment> CENTER </alignment>
+        </Label>
+
+        <!-- Dual Player Adventure Button -->
+        <Button fx:id="breakthrough" onAction="#breaktroughclicked" text="雙人闖關" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="150.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+
+        <!-- Dual Player Battle Button -->
+        <Button fx:id="battle" onAction="#battleclicked" text="雙人對戰" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="220.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

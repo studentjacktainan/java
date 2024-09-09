@@ -11,7 +11,9 @@ public class ChooseGameView {
     @FXML
     private Button singleGame;
     @FXML
-    private Button multipleGames;
+    private Button createRoom;
+    @FXML
+    private Button joinRoom;
 
     private BorderPane borderPane;
     private BBTankPane bbTankPane;
@@ -23,7 +25,8 @@ public class ChooseGameView {
     public void initialize() {
         // Ensure buttons are connected to methods
         singleGame.setOnAction(this::singleGameClicked);
-        multipleGames.setOnAction(this::multipleGamesClicked);
+        createRoom.setOnAction(this::createRoomClicked);
+        joinRoom.setOnAction(this::joinRoomClicked);
     }
 
     @FXML
@@ -50,5 +53,11 @@ public class ChooseGameView {
     public void multipleGamesClicked(ActionEvent actionEvent) {
         // Handle the multiple games button click
         System.out.println("Multiple Games Clicked");
+    }
+
+    public void createRoomClicked(ActionEvent actionEvent) {
+    }
+
+    public void joinRoomClicked(ActionEvent actionEvent) {
     }
 }

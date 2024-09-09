@@ -1,0 +1,64 @@
+/* Style the root AnchorPane or the main container */
+.root {
+    -fx-background-image: url("multipleplayer.jpg");
+    -fx-background-size: cover; /* Resize the image to cover the entire area */
+    -fx-background-position: center center; /* Center the image */
+    -fx-background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+/* Style the title label */
+.title-label {
+    -fx-text-fill: #2a2a2a; /* Dark grey color for text */
+    -fx-font-size: 36px; /* Font size for the title */
+    -fx-font-weight: bold; /* Bold text for emphasis */
+    -fx-padding: 20px; /* Padding around the text */
+}
+
+/* Style the input labels (if any) */
+.input-label {
+    -fx-text-fill: #333; /* Dark grey color for text */
+    -fx-font-size: 24px; /* Font size for input labels */
+    -fx-padding: 5px; /* Padding around the text */
+}
+
+/* Style the TextField and PasswordField */
+.text-field, .password-field {
+    -fx-background-color: white; /* White background for input fields */
+    -fx-border-color: #bfbfbf; /* Light grey border color */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-padding: 5px; /* Padding inside the fields */
+    -fx-pref-width: 273px; /* Preferred width of the input fields */
+}
+
+/* Style the Buttons */
+.button {
+    -fx-background-color: #4CAF50; /* Green background for buttons */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 18px; /* Font size for buttons */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-pref-width: 200px; /* Ensure button width is sufficient for text */
+    -fx-padding: 10px 20px; /* Padding inside the buttons */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded background */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.5, 0, 1); /* Subtle shadow effect */
+    -fx-text-alignment: center; /* Center align the text */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #45a049; /* Slightly darker green when hovered */
+}
+
+/* Style the Cancel button differently */
+.button#cancel {
+    -fx-background-color: #f44336; /* Red background for cancel button */
+}
+
+.button#cancel:hover {
+    -fx-background-color: #d32f2f; /* Darker red when hovered */
+}
+
+/* Style for the 查看排行榜 button to ensure full text visibility */
+.button#viewRank {
+    -fx-pref-width: 200px; /* Adjust width as needed */
+}
