@@ -1,0 +1,29 @@
+.root {
+    -fx-background-image: url("game-over.png");
+    -fx-background-size: cover; /* This ensures the image covers the entire background */
+    -fx-background-position: center center; /* Centers the image */
+    -fx-background-repeat: no-repeat;
+}
+
+.vbox {
+    -fx-background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    -fx-padding: 20;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+
+.label-title {
+    -fx-text-fill: red;
+    -fx-font-size: 64px;
+}
+
+.label-subtitle {
+    -fx-text-fill: black;
+    -fx-font-size: 24px;
+}
+
+.button {
+    -fx-background-color: yellow;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+}
