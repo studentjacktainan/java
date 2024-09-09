@@ -28,7 +28,6 @@ public class ChooseGameView {
 
     @FXML
     public void singleGameClicked(ActionEvent actionEvent) {
-
         stage=new Stage();
         borderPane = new BorderPane();
         bbTankPane = BBTankPane.getInstance(); // Ensure this returns a valid instance

@@ -2,11 +2,6 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
-/**
- * @Date 2023/2/27 17:24
- * @Created by 邦邦拒绝魔抗
- * @Description TODO
- */
 public class Bomb extends GameUnit {
     private int tankR;
     private int bombR;
@@ -51,7 +46,7 @@ public class Bomb extends GameUnit {
     }
 
     @Override
-    public void redraw(Pane parent) {
+    public void redraw(Pane parent) {//炸弹重绘
         bombOuter.setRadius(bombR);
         bombInner.setRadius(bombR - 2);
         parent.getChildren().addAll(bombOuter, bombInner);

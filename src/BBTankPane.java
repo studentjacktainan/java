@@ -9,12 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-
-/**
- * @Date 2023/2/27 13:00
- * @Created by 邦邦拒绝魔抗
- * @Description 绘制背景和各单元（坦克、子弹、爆炸等），处理事件
- */
 public class BBTankPane extends Pane implements Runnable {
     private static BBTankPane instance = new BBTankPane();
     private List<GameUnit> gameUnitList;//游戏单元列表
@@ -45,9 +39,6 @@ public class BBTankPane extends Pane implements Runnable {
         redrawUnits(this);
     }
 
-    /**
-     * 加载默认地图
-     */
     private void launchDefaultMap() {
         heroA = new HeroTank(300, 300, 0, Color.YELLOW);
         heroB = new HeroTank(700, 300, 0, Color.GREEN.brighter().brighter());
@@ -209,19 +200,14 @@ public class BBTankPane extends Pane implements Runnable {
         this.needRun = needRun;
     }
 
-    /**
-     * 更新各个单元
-     */
-    private void updateUnits() {
+
+    private void updateUnits() {//更新单元
         for (GameUnit gameUnit : gameUnitList) {
             gameUnit.update();
         }
     }
 
-    /**
-     * 更新单元列表
-     */
-    private void updateUnitList() {
+    private void updateUnitList() {//更新单元列表
         if (!unitListAddT.isEmpty()) {//有单元要添加
             for (GameUnit u : unitListAddT) {
                 gameUnitList.add(u);
@@ -238,10 +224,7 @@ public class BBTankPane extends Pane implements Runnable {
         }
     }
 
-    /**
-     * 重绘各个单元
-     */
-    private void redrawUnits(Pane parent) {
+    private void redrawUnits(Pane parent) {//重绘单元列表
         //清空面板
         getChildren().clear();
         for (GameUnit gameUnit : gameUnitList) {

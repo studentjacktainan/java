@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChooseGameView">
    <children>
-      <Label layoutX="172.0" layoutY="81.0" text="開始遊戲">
-         <font>
-            <Font size="64.0" />
-         </font>
-      </Label>
-      <Button fx:id="singleGame" layoutX="252.0" layoutY="200.0" mnemonicParsing="false" onAction="#singleGameClicked" text="單人遊戲">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
-      <Button fx:id="multipleGames" layoutX="252.0" layoutY="268.0" mnemonicParsing="false" onAction="#multipleGamesClicked" text="多人聯機">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
+      <!-- Centering content using a VBox -->
+      <VBox alignment="CENTER" spacing="30.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <!-- Centered Title Label -->
+         <Label text="開始遊戲">
+            <font>
+               <Font size="64.0" />
+            </font>
+            <alignment>CENTER</alignment>
+         </Label>
+
+         <!-- Start Game Button -->
+         <Button fx:id="singleGame" mnemonicParsing="false" onAction="#singleGameClicked" text="單人遊戲">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+
+         <!-- View Rank Button -->
+         <Button fx:id="multipleGames" mnemonicParsing="false" onAction="#multipleGamesClicked" text="多人聯機">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+      </VBox>
    </children>
 </AnchorPane>

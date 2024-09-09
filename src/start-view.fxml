@@ -8,30 +8,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views" stylesheets="@start-view.css">
    <children>
       <!-- Centering content using a VBox -->
-      <VBox alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" spacing="30.0">
+      <VBox alignment="CENTER" spacing="30.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
 
          <!-- Centered Tank Title -->
-         <Label text="坦克大戰">
+         <Label text="坦克大戰" styleClass="game-title">
             <font>
                <Font size="64.0" />
             </font>
          </Label>
 
          <!-- Start Game Button -->
-         <Button fx:id="startGame" mnemonicParsing="false" onAction="#startGameClicked" text="開始遊戲">
-            <font>
-               <Font size="18.0" />
-            </font>
+         <Button fx:id="startGame" mnemonicParsing="false" onAction="#startGameClicked" text="開始遊戲" styleClass="game-button">
          </Button>
 
          <!-- View Rank Button -->
-         <Button fx:id="viewRank" mnemonicParsing="false" onAction="#viewRankClicked" text="查看排行榜">
-            <font>
-               <Font size="18.0" />
-            </font>
+         <Button fx:id="viewRank" mnemonicParsing="false" onAction="#viewRankClicked" text="查看排行榜" styleClass="game-button">
          </Button>
       </VBox>
    </children>
